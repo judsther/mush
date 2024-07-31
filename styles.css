@@ -1,0 +1,113 @@
+/* Esctilo general */
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+/* Esctilo Banner */
+
+.banner-container{
+    
+    width: 100%;
+    height: auto;
+    background-image: url('/img/Banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.banner-container img{
+
+    width: 100%;
+    height: auto;
+}
+
+/* Esctilo Barra de Navegación*/
+
+nav{
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(29, 29, 29, 0.1); 
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 2; 
+}
+
+nav .nav-link{
+    color: #ffffff;
+}
+
+
+nav .logoimg {
+    width: 50%;
+    height: auto;
+
+}
+
+.navbar-toggler-icon{
+    background-image: url('data:image/svg+xml,%3csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3e%3cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+    
+}
+
+.dropdown-menu .btn{
+    background-color: #A3B9F1;
+}
+
+/* Esctilo Tarjetas de Productos */
+
+.tarjetass{
+    padding-top: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   
+}
+
+.tarjetass .card{
+    border-radius: 0rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: #ffffff;
+    background-color: #23232360;
+    border: none;
+    margin: 2rem;
+    width: 10px;
+   
+}
+
+.tarjetass .card img{
+    border-radius: 0rem;
+    border-top-left-radius: 1rem;
+
+}
+
+.tarjetass .card .button-cart .btn{
+    background-color: #FFED90;
+    margin: 1rem;
+   
+}
+
+
+section .card-body{
+    color: #232323;
+    padding-bottom: 0rem;
+}
+
+/*Estilo Footer */
+
+
+footer{
+    background-color: #232323;
+    padding-top: 1rem;
+}
+
+footer .bi{
+    color: #FFED90;
+}

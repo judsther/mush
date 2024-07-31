@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+   <link href="styles.css" rel="stylesheet">
+   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+       <!--Banner-->
+        
+       <section class="banner-container">
+        <a href="index.html">
+        <img id="hover-banner" class= "d-block w-100" src="/img/Banner1.png" alt="">
+      </a>
+     </section>
+     
+      <!--Fin Banner-->
+
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logoimg" src="img/logoblanco.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  View Cart
+                </a>
+                <ul class="dropdown-menu">
+                  <!--Carrito-->
+                  <div class="dropdown-menu show" id="carrito" data-bs-popper="static">
+                    <table class="table table-striped" id="lista-carrito">
+                        <thead>
+                        <tr>
+                            <th>Imagen</th>
+                            <th>Prenda</th>
+                            <th>Cantidad</th>
+                            <th>Precio</th>
+                        </tr>
+                      </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                    <a href="index.html" class="btn">Vaciar Carrito</a>
+                </div>
+                <!--Fin Carrito-->
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Fin Navbar-->
+
+    <!--Tarjetas-->
+
+<!--1-->
+<section class="tarjetass">
+<section class="d-flex justify-content-center">       
+  <div class="row">
+    <div class="col-md-4 col-lg-3 col-sm-12 d-flex justify-content-center">
+    <article class="card" style="width:25rem;">
+            <img src="/img/c1.png" alt="foto-perfil" class="card-img-top">
+         <section class="card-body">
+            <h4 class="card-title">Beige Washed</h4> 
+            <p class="card-text">Tallas disponibles:</p>
+            <h5>S</h5>                 
+         </section>
+<!--boton-->
+         <div id="addCart" class="button-cart d-grid-2 d-flex justify-content-end">
+               <button href="#"  type="button" class="btn" onclick="addCart(event)" data-id="Beige">Add to Cart</button>
+               </div>
+        </article>
+    </div>
+<!--2-->
+    <div class="col-md-4 col-lg-3 col-sm-12 d-flex justify-content-center">
+      <article class="card" style="width:25rem;">
+              <img src="/img/c2.png" alt="foto-perfil" class="card-img-top">
+           <section class="card-body">
+              <h4 class="card-title">Gris Washed</h4> 
+              <p class="card-text">Tallas disponibles:</p>
+              <h5>L - M - S</h5>                
+           </section>
+<!--boton-->
+           <div id="addCart" class="button-cart d-grid-2 d-flex justify-content-end">
+            <button href="#"  type="button" class="btn" onclick="addCart(event)" data-id="Gris">Add to Cart</button>
+               </div>
+
+          </article>
+      </div>
+<!--3-->
+      <div class="col-md-4 col-lg-3 col-sm-12 d-flex justify-content-center">
+        <article class="card" style="width:25rem;">
+                <img src="/img/c3.png" alt="foto-perfil" class="card-img-top">
+             <section class="card-body">
+                <h4 class="card-title">Morado Washed</h4> 
+                <p class="card-text">Tallas disponibles:</p> 
+                <h5>L - M - S</h5>                
+             </section>
+<!--boton-->
+            <div id="addCart" class="button-cart d-grid-2 d-flex justify-content-end">
+              <button href="#"  type="button" class="btn" onclick="addCart(event)" data-id="Morado">Add to Cart</button>
+               </div>
+          
+            </article>
+        </div>
+<!--4-->
+        <div class="col-md-4 col-lg-3 col-sm-12 d-flex justify-content-center">
+          <article class="card" style="width:25rem;">
+                  <img src="/img/c4.png" alt="foto-perfil" class="card-img-top">
+               <section class="card-body">
+                  <h4 class="card-title">Negro Washed</h4> 
+                  <p class="card-text">Tallas disponibles</p>
+                  <h5>M - S</h5>                 
+               </section>
+<!--boton-->
+               <div id="addCart" class="button-cart d-grid-2 d-flex justify-content-end">
+                <button href="#"  type="button" class="btn" onclick="addCart(event)" data-id="Negro">Add to Cart</button>
+               </div>
+
+              </article>
+          </div>
+     </div>  
+</section>
+</section>
+
+<!--Fin Tarjetas-->
+
+<!--Footer-->
+<div class="footer-containerr">
+  <footer class="text-center mt-4">
+   <div class="container">
+      <div class="row">
+      <section class="col-lg-6 col-md-12 text-light">
+         <h4 class="text-light mt-2">Síguenos</h4>
+         <ul class="list-unstyled">
+          <h3><li><a href="https://www.instagram.com/themush.sv/?next=%2F"><i class="bi bi-instagram"></i></a></li></h3>
+          <h3><li><a href="./index.html"><i class="bi bi-facebook"></i></a></li></h3>
+         </ul>
+      </section>
+      <section class="col-lg-6 col-md-12">
+         <h5 class="text-light mt-2">Contacto</h5>
+         <ul class="list-unstyled text-light">
+            <li><a href="#"></a>+503 0000-0000</li>
+            <li><a href="#"></i></a>themush.sv@gmail.com</li>
+            <li><a href="https://www.instagram.com/themush.sv/?next=%2F"></a> @themush.sv</li>
+         </ul>
+      </section>
+      </div>   
+
+      <section class="text-center p-2 text-light">
+         2024 MUSH S.A. de C.V. © - Todos los derechos reservados.
+      </section>
+
+   </div>
+  </footer>
+</div>
+<!--Fin Footer-->
+ 
+        
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
