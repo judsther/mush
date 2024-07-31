@@ -3,11 +3,11 @@
 const banner = document.getElementById('hover-banner');
 
 banner.addEventListener('mouseover', ()=>{
-   banner.src = '/img/Banner2.png'
+   banner.src = 'img/Banner2.png'
 });
    
 banner.addEventListener('mouseout', ()=>{
-    banner.src = '/img/Banner1.png';
+    banner.src = 'img/Banner1.png';
  });
 
  //Invitar a subscribirse al hacer click en banner 
